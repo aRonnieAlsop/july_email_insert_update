@@ -1,613 +1,1146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+<html lang="en" style="box-sizing: border-box; scroll-behavior: smooth;">
+<head style="box-sizing: border-box;">
+<meta charset="utf-8" style="box-sizing: border-box;"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" style="box-sizing: border-box;"/>
+<meta content="Indian Valley Chamber of Commerce newsletter featuring community news, upcoming events, new members, and Chamber updates." name="description" style="box-sizing: border-box;"/>
+<title style="box-sizing: border-box;">IVCC Newsletter | 07 28 2026</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect" style="box-sizing: border-box;"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" style="box-sizing: border-box;"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=Playfair+Display:wght@400;500&amp;display=swap" rel="stylesheet" style="box-sizing: border-box;"/>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<style type="text/css">.newsletter-shell::before{content:"";position:absolute;z-index:100;top:0;bottom:0;left:15px;width:1px;background:rgba(25, 24, 22, 0.48);pointer-events:none}
+.newsletter-shell::after{content:"";position:absolute;z-index:100;top:0;right:15px;bottom:0;width:1px;background:rgba(25, 24, 22, 0.48);pointer-events:none}
+.newsletter-nav a:first-child{padding-left:24px}
+.newsletter-nav a:hover,
+.newsletter-nav a:focus-visible{color:#191816;background:rgba(25, 24, 22, 0.055);opacity:0.78;outline:none}
+.meeting-feature-link:hover,
+.meeting-feature-link:focus-visible{color:#191816;background:rgba(25, 24, 22, 0.055);opacity:0.82;outline:none}
+.editorial-copy p:last-child{margin-bottom:0}
+.section-image-wide > img:first-child{width:100%;height:390px;min-height:390px;object-fit:cover;object-position:center}
+.outline-button:hover,
+.outline-button:focus-visible{color:#191816;background:rgba(25, 24, 22, 0.055);outline:none}
+.membership-option:first-child{border-bottom:1px solid rgba(25, 24, 22, 0.48)}
+@media (max-width: 760px) {
 
-  <meta
-    name="description"
-    content="Indian Valley Chamber of Commerce newsletter featuring community news, upcoming events, new members, and Chamber updates."
-  >
+  .membership-section {
+    grid-template-columns: 1fr;
+  }
 
-  <title>IVCC Newsletter | 07 28 2026</title>
+  .membership-image {
+    min-height: 300px;
+    padding: 24px;
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Playfair+Display:wght@400;500&display=swap"
-    rel="stylesheet"
-  >
+  .membership-image img {
+    width: min(100%, 430px);
+    height: auto;
+    max-height: none;
+  }
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  .membership-option {
+    align-items: center;
 
-<body>
+    padding: 38px 24px 42px;
 
-  <main class="newsletter-shell">
+    text-align: center;
+  }
 
-   <!-- =====================================================
+  .membership-title {
+    max-width: 520px;
+  }
+
+}
+.inline-link:hover{color:#000;border-bottom-color:#000}
+.membership-card:first-child{border-right:1px solid rgba(0,0,0,.18)}
+.membership-button:hover{background:#111;color:#f6f2e9}
+@media (max-width:700px){
+
+    .membership-links{
+        grid-template-columns:1fr;
+    }
+
+    .membership-card:first-child{
+        border-right:none;
+        border-bottom:1px solid rgba(0,0,0,.18);
+    }
+
+}
+@media (max-width: 900px) {
+
+    .mickey-bottom {
+        margin: -70px 4px -1px 0;
+    }
+
+    .mickey-bottom img {
+        width: 130px;
+        transform: translateX(8px);
+    }
+
+}
+@media (max-width: 620px) {
+
+  :root {
+    --frame-gutter: 10px;
+  }
+
+  body {
+    padding: 0;
+
+    background: var(--paper);
+  }
+
+  .newsletter-shell {
+    max-width: none;
+
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .title-line {
+    grid-template-columns: 1fr;
+    gap: 17px;
+
+    min-height: auto;
+    padding: 23px 20px 27px;
+  }
+
+  .issue-date {
+    justify-self: start;
+  }
+
+  .newsletter-title {
+    justify-self: center;
+  }
+
+  .title-balance {
+    display: none;
+  }
+
+  .header-lower-row {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .newsletter-nav {
+    min-height: 58px;
+  }
+
+  .newsletter-nav a {
+    min-height: 58px;
+    padding: 15px 10px;
+
+    font-size: 7px;
+    letter-spacing: 0.1em;
+  }
+
+  .newsletter-nav a:first-child {
+    padding-left: 20px;
+  }
+
+  .meeting-feature {
+    min-width: 0;
+
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .meeting-feature-link {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+    row-gap: 3px;
+    align-items: center;
+
+    padding: 13px 20px 14px;
+  }
+
+  .meeting-date {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .meeting-title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+  }
+
+  .meeting-time {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .meeting-location {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 12px;
+  }
+
+
+  
+  .split-section,
+  .reverse-section {
+    grid-template-columns: 43% 57%;
+
+    min-height: 285px;
+  }
+
+  .split-section .image-placeholder,
+  .reverse-section .image-placeholder,
+  .split-section .section-image,
+  .reverse-section .section-image {
+    grid-column: 1;
+    grid-row: 1;
+
+    min-height: 285px;
+    padding: 17px 12px;
+
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    grid-column: 2;
+    grid-row: 1;
+
+    padding: 25px 20px;
+  }
+
+  .editorial-copy {
+    font-size: 10px;
+    line-height: 1.55;
+  }
+
+  .image-placeholder strong {
+    font-size: 19px;
+  }
+
+  .image-placeholder small {
+    font-size: 6px;
+  }
+
+  .section-title {
+    margin-bottom: 13px;
+
+    font-size: clamp(23px, 7vw, 31px);
+  }
+
+  .section-kicker {
+    margin-bottom: 10px;
+
+    font-size: 7px;
+  }
+
+  .event-date {
+    font-size: 8px;
+  }
+
+  .image-placeholder-wide,
+  .section-image-wide {
+    min-height: 320px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-image-wide > img:first-child {
+    height: 320px;
+    min-height: 320px;
+  }
+
+.mickey-bottom {
+    margin: -35px 4px -1px 0;
+}
+
+.mickey-bottom img {
+    width: 110px;
+    transform: translateX(6px);
+} 
+  .centered-copy {
+    padding: 32px 27px 37px;
+  }
+
+  .questionnaire-section {
+    padding: 47px 27px 51px;
+  }
+
+  .newsletter-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo-area {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .footer-meeting-reminder {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+}
+@media (max-width: 430px) {
+
+  .newsletter-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-nav a {
+    min-height: 52px;
+    padding: 12px 8px;
+
+    font-size: 6px;
+    letter-spacing: 0.07em;
+  }
+
+  .newsletter-nav a:first-child {
+    padding-left: 15px;
+  }
+
+  .meeting-feature-link {
+    column-gap: 10px;
+    padding: 12px 15px 13px;
+  }
+
+  .meeting-title {
+    font-size: 17px;
+  }
+
+  .split-section,
+  .reverse-section {
+    grid-template-columns: 44% 56%;
+  }
+
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    padding: 22px 15px;
+
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .outline-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+}
+@media (max-width: 340px) {
+
+  
+  .split-section,
+  .reverse-section {
+    grid-template-columns: 1fr;
+  }
+
+  .split-section .image-placeholder,
+  .reverse-section .image-placeholder,
+  .split-section .section-image,
+  .reverse-section .section-image {
+    grid-column: 1;
+    grid-row: 1;
+
+    min-height: 220px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    grid-column: 1;
+    grid-row: 2;
+
+    padding: 27px 22px 31px;
+
+    font-size: 10px;
+  }
+
+}
+.footer-meeting-link:hover,
+.footer-meeting-link:focus-visible{background:rgba(25, 24, 22, 0.055);outline:none}
+@media (max-width: 620px) {
+
+  
+  .membership-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .membership-image {
+    width: 100%;
+    min-height: 0;
+    padding: 24px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .membership-image img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+
+    object-fit: contain;
+  }
+
+  .membership-content {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .membership-option {
+    width: 100%;
+    min-width: 0;
+    padding: 34px 24px 38px;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .membership-title {
+    width: 100%;
+    max-width: 440px;
+
+    font-size: clamp(28px, 9vw, 38px);
+    line-height: 1;
+  }
+
+  .membership-option .outline-button {
+    width: 100%;
+    max-width: 280px;
+    min-width: 0;
+  }
+
+
+  
+  .newsletter-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+    min-height: 0;
+  }
+
+  .footer-logo-area {
+    width: 100%;
+    padding: 27px 24px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .footer-meeting-link {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-meeting-reminder {
+    width: 100%;
+    min-height: 0;
+    padding: 27px 24px;
+
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-meeting-link:hover,
+  .footer-meeting-link:focus-visible {
+    background: var(--soft-hover);
+    outline: none;
+  }
+
+}
+
+/* =========================================================
+   RESPONSIVE OVERRIDES
+   These must remain in a <style> block because media queries
+   cannot be written inside an element's style="" attribute.
+   !important is required so they override desktop inline CSS.
+========================================================= */
+@media only screen and (max-width: 760px) {
+  .membership-section {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .membership-image {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 24px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25,24,22,.48) !important;
+  }
+  .membership-image img {
+    width: 100% !important;
+    max-width: 430px !important;
+    height: auto !important;
+    max-height: 360px !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+  }
+  .membership-content {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .membership-option {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 34px 24px 38px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .membership-title {
+    width: 100% !important;
+    max-width: 440px !important;
+    font-size: clamp(28px,9vw,38px) !important;
+    line-height: 1 !important;
+  }
+  .membership-option .outline-button {
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  body {
+    padding: 0 !important;
+    background: #f6f2e9 !important;
+  }
+  .newsletter-shell {
+    width: 100% !important;
+    max-width: none !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+  }
+  .newsletter-shell::before { left: 10px !important; }
+  .newsletter-shell::after { right: 10px !important; }
+
+  .title-line {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 17px !important;
+    min-height: auto !important;
+    padding: 23px 20px 27px !important;
+  }
+  .issue-date { justify-self: start !important; }
+  .newsletter-title {
+    justify-self: center !important;
+    font-size: clamp(31px,11vw,44px) !important;
+  }
+  .title-balance { display: none !important; }
+
+  .header-lower-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  .newsletter-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    min-height: 58px !important;
+  }
+  .newsletter-nav a {
+    flex: 1 1 25% !important;
+    min-height: 58px !important;
+    padding: 15px 10px !important;
+    font-size: 7px !important;
+    letter-spacing: .1em !important;
+  }
+  .newsletter-nav a:first-child { padding-left: 20px !important; }
+
+  .meeting-feature {
+    min-width: 0 !important;
+    border-top: 1px solid rgba(25,24,22,.48) !important;
+    border-left: 0 !important;
+  }
+  .meeting-feature-link {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    column-gap: 14px !important;
+    row-gap: 3px !important;
+    align-items: center !important;
+    padding: 13px 20px 14px !important;
+  }
+  .meeting-date { grid-column: 1 !important; grid-row: 1 !important; margin: 0 !important; }
+  .meeting-title { grid-column: 2 !important; grid-row: 1 !important; font-size: 18px !important; }
+  .meeting-time { grid-column: 1 !important; grid-row: 2 !important; margin: 0 !important; }
+  .meeting-location { grid-column: 2 !important; grid-row: 2 !important; font-size: 12px !important; }
+
+  .split-section,
+  .reverse-section {
+    display: grid !important;
+    grid-template-columns: 43% 57% !important;
+    min-height: 285px !important;
+  }
+  .split-section .section-image,
+  .reverse-section .section-image,
+  .split-section .image-placeholder,
+  .reverse-section .image-placeholder {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-height: 285px !important;
+    padding: 17px 12px !important;
+    border-right: 1px solid rgba(25,24,22,.48) !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+  }
+  .split-section .section-image img,
+  .reverse-section .section-image img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+  }
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    padding: 25px 20px !important;
+    font-size: 10px !important;
+    line-height: 1.55 !important;
+  }
+  .section-title {
+    margin-bottom: 13px !important;
+    font-size: clamp(23px,7vw,31px) !important;
+  }
+  .section-kicker { margin-bottom: 10px !important; font-size: 7px !important; }
+  .event-date { font-size: 8px !important; }
+
+  .section-image-wide {
+    min-height: 320px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25,24,22,.48) !important;
+  }
+  .section-image-wide > img:first-child {
+    width: 100% !important;
+    height: 320px !important;
+    min-height: 320px !important;
+    object-fit: cover !important;
+  }
+  .centered-copy { padding: 32px 27px 37px !important; }
+  .mickey-bottom { margin: -35px 4px -1px 0 !important; }
+  .mickey-bottom img { width: 110px !important; transform: translateX(6px) !important; }
+
+  .questionnaire-section { padding: 47px 27px 51px !important; }
+  .questionnaire-title { font-size: clamp(34px,10vw,46px) !important; }
+  .outline-button { max-width: 100% !important; }
+
+  .newsletter-footer {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+  .footer-logo-area {
+    width: 100% !important;
+    padding: 27px 24px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25,24,22,.48) !important;
+  }
+  .footer-meeting-link { display: block !important; width: 100% !important; min-width: 0 !important; }
+  .footer-meeting-reminder {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 27px 24px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .newsletter-nav a {
+    flex: 1 1 50% !important;
+    min-height: 52px !important;
+    padding: 12px 8px !important;
+    font-size: 6px !important;
+    letter-spacing: .07em !important;
+  }
+  .newsletter-nav a:first-child { padding-left: 15px !important; }
+  .meeting-feature-link { column-gap: 10px !important; padding: 12px 15px 13px !important; }
+  .meeting-title { font-size: 17px !important; }
+  .split-section,
+  .reverse-section { grid-template-columns: 44% 56% !important; }
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    padding: 22px 15px !important;
+    font-size: 9px !important;
+    line-height: 1.5 !important;
+  }
+  .section-title { font-size: 23px !important; }
+  .outline-button { width: 100% !important; min-width: 0 !important; }
+}
+
+@media only screen and (max-width: 340px) {
+  .split-section,
+  .reverse-section { grid-template-columns: 1fr !important; }
+  .split-section .section-image,
+  .reverse-section .section-image,
+  .split-section .image-placeholder,
+  .reverse-section .image-placeholder {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-height: 220px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25,24,22,.48) !important;
+  }
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    padding: 27px 22px 31px !important;
+    font-size: 10px !important;
+  }
+}
+
+</style></head>
+<body bgcolor="#dedbd4" style='box-sizing: border-box; margin: 0; padding: 28px 16px; color: #191816; background: #dedbd4; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 13px; font-weight: 400; line-height: 1.65;'>
+<main class="newsletter-shell" style="box-sizing: border-box; position: relative; width: 100%; max-width: 680px; margin: 0 auto; padding-right: 15px; padding-left: 15px; overflow: hidden; color: #191816; background: #f6f2e9; border: 1px solid rgba(25, 24, 22, 0.48); border-radius: 0; box-shadow: none;">
+<!-- =====================================================
      NEWSLETTER HEADER
 ====================================================== -->
-
-<header class="newsletter-header">
-
-  <div class="title-line">
-
-    <p class="issue-date">
+<header class="newsletter-header" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1;">
+<div class="title-line" style="box-sizing: border-box; background: #f6f2e9; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 100px; padding: 22px 28px; border-bottom: 1px solid rgba(25, 24, 22, 0.48);">
+<p class="issue-date" style='box-sizing: border-box; justify-self: start; margin: 0; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 9px; font-weight: 500; line-height: 1; letter-spacing: 0.13em; white-space: nowrap;'>
       07 30 2026
     </p>
-
-    <h1 class="newsletter-title">
+<h1 class="newsletter-title" style='box-sizing: border-box; justify-self: center; margin: 0; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(31px, 6vw, 48px); font-weight: 400; line-height: 1; letter-spacing: -0.055em; text-align: center;'>
       IVCC Newsletter
     </h1>
-
-    <span class="title-balance" aria-hidden="true"></span>
-
-  </div>
-
-
-  <div class="header-lower-row">
-
-    <nav class="newsletter-nav" aria-label="Newsletter sections">
-
-      <a href="#first-saturday-market">
+<span aria-hidden="true" class="title-balance" style="box-sizing: border-box; display: block;"></span>
+</div>
+<div class="header-lower-row" style="box-sizing: border-box; background: #f6f2e9; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: stretch; min-height: 78px; border-bottom: 1px solid rgba(25, 24, 22, 0.48);">
+<nav aria-label="Newsletter sections" class="newsletter-nav" style="box-sizing: border-box; background: #f6f2e9; display: flex; align-items: stretch; justify-content: flex-start; min-width: 0; min-height: 78px; border-bottom: 0;">
+<a href="#first-saturday-market" style='box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; min-width: 0; padding: 20px 15px; color: #191816; background: #f6f2e9; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.16em; text-align: left; text-decoration: none; text-transform: uppercase; border: 0; transition: background-color 180ms ease,
+    opacity 180ms ease;'>
         Events
       </a>
-
-      <a href="#coyote-karma">
+<a href="#coyote-karma" style='box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; min-width: 0; padding: 20px 15px; color: #191816; background: #f6f2e9; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.16em; text-align: left; text-decoration: none; text-transform: uppercase; border: 0; transition: background-color 180ms ease,
+    opacity 180ms ease;'>
         New Members
       </a>
-
-      <a href="#website-questionnaire">
+<a href="#website-questionnaire" style='box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; min-width: 0; padding: 20px 15px; color: #191816; background: #f6f2e9; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.16em; text-align: left; text-decoration: none; text-transform: uppercase; border: 0; transition: background-color 180ms ease,
+    opacity 180ms ease;'>
         Website Input
       </a>
-      <a href="#memberships">MEMBERSHIP</a>
-    </nav>
-
-
-    <section
-      class="meeting-feature"
-      id="board-meeting"
-      aria-labelledby="meeting-heading"
-    >
-
-      <a
-        class="meeting-feature-link"
-        href="http://facebook.com/events/1827497748691515/?post_id=1841095300665093&amp;acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22mechanism%22%3A%22footer_attachment%22%2C%22surface%22%3A%22newsfeed%22%7D]%2C%22ref_notif_type%22%3Anull%7D"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View IVCC Meeting information on Facebook"
-      >
-
-        <p class="meeting-date">
+<a href="#memberships" style='box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; min-width: 0; padding: 20px 15px; color: #191816; background: #f6f2e9; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.16em; text-align: left; text-decoration: none; text-transform: uppercase; border: 0; transition: background-color 180ms ease,
+    opacity 180ms ease;'>MEMBERSHIP</a>
+</nav>
+<section aria-labelledby="meeting-heading" class="meeting-feature" id="board-meeting" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; min-width: 220px; border-bottom: 0; border-left: 1px solid rgba(25, 24, 22, 0.48);">
+<a aria-label="View IVCC Meeting information on Facebook" class="meeting-feature-link" href="https://facebook.com/events/1827497748691515/?post_id=1841095300665093&amp;acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22mechanism%22%3A%22footer_attachment%22%2C%22surface%22%3A%22newsfeed%22%7D]%2C%22ref_notif_type%22%3Anull%7D" rel="noopener noreferrer" style="box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%; padding: 12px 22px 11px; color: #191816; background: #f6f2e9; text-align: left; text-decoration: none; pointer-events: auto; cursor: pointer; transition: background-color 180ms ease,
+    opacity 180ms ease;" target="_blank">
+<p class="meeting-date" style='box-sizing: border-box; margin: 0 0 4px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1; letter-spacing: 0.16em; text-transform: uppercase;'>
           08 03 2026
         </p>
-
-        <h2 class="meeting-title" id="meeting-heading">
+<h2 class="meeting-title" id="meeting-heading" style='box-sizing: border-box; max-width: none; margin: 0; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: 20px; font-weight: 400; line-height: 1; letter-spacing: -0.035em;'>
           IVCC Meeting
         </h2>
-
-        <p class="meeting-time">
+<p class="meeting-time" style='box-sizing: border-box; margin: 7px 0 1px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.2; letter-spacing: 0.12em;'>
           6:00 PM
         </p>
-
-        <p class="meeting-location">
-          <span class="crescent-symbol" aria-hidden="true">☾</span>
+<p class="meeting-location" style='box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; gap: 5px; margin: 0; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: 13px; font-weight: 400; line-height: 1.2;'>
+<span aria-hidden="true" class="crescent-symbol" style="box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; line-height: 1; transform: rotate(-18deg);">☾</span>
           The Crescent Store
         </p>
-
-      </a>
-
-    </section>
-
-  </div>
-
+</a>
+</section>
+</div>
 </header>
-
-
-    <!-- =====================================================
+<!-- =====================================================
          DIXIE FIRE CANOPY PROJECT
          No visible section title requested
     ====================================================== -->
-
-    <section class="editorial-section editorial-section-large">
-
-
-
-<div class="section-image-wide">
-  <img
-    src="dixie-fire-canopy-project.jpg"
-    alt="The Dixie Fire Canopy Project"
-  >
-
-
+<section class="editorial-section editorial-section-large" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: block;">
+<div class="section-image-wide" style="box-sizing: border-box; position: relative; width: 100%; min-height: 390px; overflow: hidden; border-right: 0; border-bottom: 1px solid rgba(25, 24, 22, 0.48);">
+<img alt="The Dixie Fire Canopy Project" src="dixie-fire-canopy-project.jpg" style="box-sizing: border-box; display: block; max-width: 100%;"/>
 </div>
-
-      <div class="editorial-copy centered-copy">
-
-<p class="section-kicker">
+<div class="editorial-copy centered-copy" style="box-sizing: border-box; background: #f6f2e9; display: flex; flex-direction: column; justify-content: center; min-width: 0; max-width: 575px; margin: 0 auto; padding: 34px 42px 39px; text-align: center;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase; text-align: center;'>
   A New Canopy Begins to Grow
 </p>
-
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   The Indian Valley Chamber was proud to recognize Michaela "Mickey" Trammell,
   CEO of the Dixie Fire Canopy Project, as the 2026 Gold Diggers Day Grand Marshal.
 </p>
-
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   Mickey also celebrated the Dixie Fire Canopy Project's acquisition of the
   greenhouse at The Spot in downtown Greenville, cutting the ribbon to open the
   organization's new nursery. Already beginning to fill, the greenhouse is
   bringing new green back to the heart of our community.
 </p>
-
-      </div>
-      <div class="mickey-bottom">
-    <img src="mickey.png" alt="Michaela 'Mickey' Trammell">
-    
 </div>
-
-    </section>
-
-    <!-- =====================================================
+<div class="mickey-bottom" style="box-sizing: border-box; display: flex; justify-content: flex-end; align-items: flex-end; margin: -200px -40px -1px 0; padding: 0; line-height: 0;">
+<img alt="Michaela 'Mickey' Trammell" src="mickey.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 300px; height: auto; margin: 0; padding: 0;"/>
+</div>
+</section>
+<!-- =====================================================
      GOLD DIGGERS 2026
 ====================================================== -->
-
-<section class="editorial-section split-section gold-diggers-section">
-
-  <div class="section-image">
-
-    <img
-      src="gd.png"
-      alt="Gold Diggers 2026"
-    >
-
-  </div>
-
-  <div class="editorial-copy">
-
-    <p class="section-kicker">
+<section class="editorial-section split-section gold-diggers-section" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 18px 0; background: #f6f2e9;">
+<img alt="Gold Diggers 2026" src="gd.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; filter: none;"/>
+</div>
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
       07  18  2026
     </p>
-
-    <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
       Gold Diggers 2026
     </h2>
-
-    <p>
+<p style="box-sizing: border-box; margin-top: 0;">
       Gold Diggers may not look the way many of us remember it, but gathering
       together each summer remains one of Greenville's most meaningful traditions.
     </p>
-
-    <p>
+<p style="box-sizing: border-box; margin-top: 0;">
       The celebration has taken on new meaning since the Dixie Fire, standing as
       a symbol of resilience, perseverance, and our community's determination to
       keep moving forward.
     </p>
-
-    <p>
+<p style="box-sizing: border-box; margin-top: 0;">
       Thank you to everyone who joined us this year. We can't wait to celebrate
       with you again.
     </p>
-
-  </div>
-
+</div>
 </section>
-
-
 <!-- =====================================================
      THANK YOU VOLUNTEERS
 ====================================================== -->
-
-<section class="editorial-section split-section reverse-section">
-
-<div class="section-image">
-
-    <img
-        src="volunteers.png"
-        alt="Gold Diggers volunteers"
-    >
-
+<section class="editorial-section split-section reverse-section" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden;">
+<img alt="Gold Diggers volunteers" src="volunteers.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: 100%; min-height: 335px; object-fit: cover; object-position: center; filter: none;"/>
 </div>
-
-  <div class="editorial-copy">
-
-    <p class="section-kicker">
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
       GOLD DIGGERS 2026 | APPRECIATION
     </p>
-
-    <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
       Thank You Volunteers
     </h2>
-
-    <p>
+<p style="box-sizing: border-box; margin-top: 0;">
       A heartfelt thank you to Mary Hobbs for taking on the exhausting role of
       Committee Chair, leading months of planning and preparation to make this
       year's celebration possible.
     </p>
-
-    <p>
+<p style="box-sizing: border-box; margin-top: 0;">
       Thank you to
-      <a
-        class="inline-link"
-        href="https://shelbyjanea.com/"
-        target="_blank"
-        rel="noopener"
-      >
+      <a class="inline-link" href="https://shelbyjanea.com/" rel="noopener" style="box-sizing: border-box; color: #6d6d6d; text-decoration: none; border-bottom: 1px solid rgba(0, 0, 0, 0.18); transition: all 0.2s ease;" target="_blank">
         Shelby Janea
       </a>
       for stepping in when asked to emcee the parade, Jennifer Ann Meyers for
       organizing an incredible community raffle, and Joey Ellison for pulling
       together a full Classic Car Show in less than 24 hours.
     </p>
-
-  </div>
-
+</div>
 </section>
-
-    <!-- =====================================================
+<!-- =====================================================
          EVENTS
          Navbar "Events" lands here
     ====================================================== -->
-
-   <section
-  class="editorial-section split-section market-section"
-  id="first-saturday-market"
->
-<div class="section-image">
-  <img
-    src="market.jpg"
-    alt="First Saturday Market"
-  >
+<section class="editorial-section split-section market-section" id="first-saturday-market" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px; scroll-margin-top: 24px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 18px 12px; background: #f6f2e9;">
+<img alt="First Saturday Market" src="market.jpg" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; filter: none;"/>
 </div>
-
-      <div class="editorial-copy">
-
-        <p class="event-date">
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="event-date" style='box-sizing: border-box; margin-top: 0; margin: 0 0 10px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.18em;'>
           08 01 2026
         </p>
-
-        <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
           First Saturday Market
         </h2>
-
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   The First Saturday Market returns August 1 with local vendors, handmade
   goods, vintage treasures, art, antiques, and more in front of the former
   Crescent Country building, soon to open as Coyote Karma.
 </p>
-
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   Vendor spaces are still available for $10. Call
-  <a class="inline-link" href="tel:+15302587173">(530) 258-7173</a>
+  <a class="inline-link" href="tel:+15302587173" style="box-sizing: border-box; color: #6d6d6d; text-decoration: none; border-bottom: 1px solid rgba(0, 0, 0, 0.18); transition: all 0.2s ease;">(530) 258-7173</a>
   to reserve your space.
 </p>
-
-      </div>
-
-    </section>
-
-
+</div>
+</section>
 <!-- =====================================================
      WOMEN OF PLUMAS COUNTY EXPO
 ====================================================== -->
-
-<section
-  class="editorial-section split-section expo-section"
-  id="womens-expo"
->
-
-   <div class="section-image">
-  <img
-    src="expo.png"
-    alt="Women's Expo"
-  >
+<section class="editorial-section split-section expo-section" id="womens-expo" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 18px 12px; background: #f6f2e9;">
+<img alt="Women's Expo" src="expo.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; filter: none;"/>
 </div>
-
-    <div class="editorial-copy">
-
-        <p class="section-kicker">
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
             Upcoming Event
         </p>
-
-        <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
             Women of Plumas County Expo
         </h2>
-
-        <p>
+<p style="box-sizing: border-box; margin-top: 0;">
             Join us August 9 from
             10:00 AM–3:00 PM at the
             Plumas-Sierra Fairgrounds for a celebration of
             local women-owned businesses, artists, organizations, and makers
             from across Plumas County.
         </p>
-
-        <p>
+<p style="box-sizing: border-box; margin-top: 0;">
             Shop, connect, and discover inspiring women from throughout the
             county—including several Indian Valley Chamber businesses.
         </p>
-
-        <a
-            class="outline-button"
-            href="https://www.facebook.com/womenofplumascountyexpo"
-            target="_blank"
-            rel="noopener"
-        >
+<a class="outline-button" href="https://www.facebook.com/womenofplumascountyexpo" rel="noopener" style='box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-width: 245px; margin-top: 22px; padding: 13px 22px; color: #191816; background: transparent; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 9px; font-weight: 500; line-height: 1.2; letter-spacing: 0.16em; text-align: center; text-decoration: none; text-transform: uppercase; border: 1px solid #191816; border-radius: 0; transition: color 180ms ease,
+    background-color 180ms ease;' target="_blank">
             Event Information
         </a>
-
-    </div>
-
+</div>
 </section>
-
-
-   <!-- =====================================================
+<!-- =====================================================
      NEW MEMBER: COYOTE KARMA
      Navbar "New Members" lands here
 ====================================================== -->
-
-<section
-  class="editorial-section split-section coyote-section"
-  id="coyote-karma"
->
-
-  <div class="section-image">
-    <img
-      src="coyote.png"
-      alt="Coyote Karma"
-    >
-  </div>
-
-  <div class="editorial-copy">
-
-    <p class="section-kicker">
+<section class="editorial-section split-section coyote-section" id="coyote-karma" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px; scroll-margin-top: 24px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 18px 12px; background: #f6f2e9;">
+<img alt="Coyote Karma" src="coyote.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center; filter: none;"/>
+</div>
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
       New Member
     </p>
-
-    <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
       IVCC Welcomes Coyote Karma
     </h2>
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   We’re excited to welcome Coyote Karma to Crescent Mills, where they’ll be
   opening inside the former Crescent Country building. Their collection of
   vintage finds, antiques, gifts, oddities, and online sales promises a unique
   shopping experience for locals and visitors alike.
 </p>
-
-<p>
+<p style="box-sizing: border-box; margin-top: 0;">
   Owners Valery and Patrick are making the move from Taos, New Mexico, bringing
   a fresh perspective while building on a location that has long been familiar
   to our community. We can’t wait to see what treasures await inside.
 </p>
-
-  </div>
-
+</div>
 </section>
-
-
 <!-- =====================================================
      NEW MEMBER: PAUL ALSOP WOOD FLOORS
 ====================================================== -->
-
-<section class="editorial-section split-section reverse-section pawf-section">
-
-  <div class="section-image">
-    <img
-      src="pawf.png"
-      alt="Paul Alsop Wood Floors"
-    >
-  </div>
-
-  <div class="editorial-copy">
-
-    <p class="section-kicker">
+<section class="editorial-section split-section reverse-section pawf-section" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; border-bottom: 1px solid rgba(25, 24, 22, 0.48); display: grid; grid-template-columns: 43% 57%; min-height: 335px;">
+<div class="section-image" style="box-sizing: border-box; grid-column: 1; grid-row: 1; order: initial; border-right: 1px solid rgba(25, 24, 22, 0.48); border-left: 0; min-width: 0; min-height: 335px; overflow: hidden;">
+<img alt="Paul Alsop Wood Floors" src="pawf.png" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: 100%; min-height: 335px; object-fit: cover; object-position: center; filter: none;"/>
+</div>
+<div class="editorial-copy" style="box-sizing: border-box; background: #f6f2e9; grid-column: 2; grid-row: 1; order: initial; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 33px 31px;">
+<p class="section-kicker" style='box-sizing: border-box; margin-top: 0; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
       New Member
     </p>
-
-    <h2 class="section-title">
+<h2 class="section-title" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
       IVCC Welcomes Paul Alsop Wood Floors
     </h2>
-
- <p>
+<p style="box-sizing: border-box; margin-top: 0;">
   With over 25 years of experience, PAWF specializes in restoring,
   refinishing, and installing hardwood floors, including custom borders
   and intricate inlay work.
 </p>
-
-  </div>
-
+</div>
 </section>
-
-
-    <!-- =====================================================
+<!-- =====================================================
          WEBSITE QUESTIONNAIRE
          Navbar "Website Input" lands here
     ====================================================== -->
-
-    <section
-      class="questionnaire-section"
-      id="website-questionnaire"
-      aria-labelledby="questionnaire-heading"
-    >
-
-      <p class="section-kicker">
+<section aria-labelledby="questionnaire-heading" class="questionnaire-section" id="website-questionnaire" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; padding: 55px 48px 58px; text-align: center; border-bottom: 1px solid rgba(25, 24, 22, 0.48); scroll-margin-top: 24px;">
+<p class="section-kicker" style='box-sizing: border-box; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase; max-width: 545px; margin-right: auto; margin-left: auto;'>
         Member Input
       </p>
-
-      <h2 class="questionnaire-title" id="questionnaire-heading">
+<h2 class="questionnaire-title" id="questionnaire-heading" style='box-sizing: border-box; max-width: 545px; margin-right: auto; margin-left: auto; margin-top: 0; margin-bottom: 22px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(34px, 7vw, 52px); font-weight: 400; line-height: 1; letter-spacing: -0.055em;'>
         Help Shape the Future IVCC Website
       </h2>
-
-      <p class="questionnaire-intro">
+<p class="questionnaire-intro" style="box-sizing: border-box; max-width: 545px; margin-right: auto; margin-left: auto; margin-top: 0; font-weight: 500;">
         As the Indian Valley Chamber of Commerce considers updating
         or rebuilding its website, we would like to hear directly
         from our members.
       </p>
-
-      <!-- Replace # with the Google Form URL later -->
-      <a
-        class="outline-button"
-        href="https://indianvalleychamber.github.io/website-feedback-survey/?fbclid=IwY2xjawTX1yZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeK2dLkChHmNfk4lmfZtkUibYbJ5Y1sCg2C-_BbXMyovhiZKSH1kgh8jK_0Wo_aem_xoM1wIKiDuuQzysBmEfI5A"
-        aria-label="Open the IVCC website questionnaire"
-      >
+<!-- Replace # with the Google Form URL later -->
+<a aria-label="Open the IVCC website questionnaire" class="outline-button" href="https://indianvalleychamber.github.io/website-feedback-survey/?fbclid=IwY2xjawTX1yZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeK2dLkChHmNfk4lmfZtkUibYbJ5Y1sCg2C-_BbXMyovhiZKSH1kgh8jK_0Wo_aem_xoM1wIKiDuuQzysBmEfI5A" style='box-sizing: border-box; max-width: 545px; margin-right: auto; margin-left: auto; display: inline-flex; align-items: center; justify-content: center; min-width: 245px; margin-top: 22px; padding: 13px 22px; color: #191816; background: transparent; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 9px; font-weight: 500; line-height: 1.2; letter-spacing: 0.16em; text-align: center; text-decoration: none; text-transform: uppercase; border: 1px solid #191816; border-radius: 0; transition: color 180ms ease,
+    background-color 180ms ease;'>
         Complete the Questionnaire
       </a>
-
-    </section>
+</section>
 <!-- =====================================================
      MEMBERSHIPS
 ====================================================== -->
-
-<section
-  class="editorial-section split-section membership-section"
-  id="memberships"
->
-
-  <div class="membership-image">
-    <img
-      src="membership.webp"
-      alt="Indian Valley Chamber of Commerce membership"
-    >
-  </div>
-
-  <div class="membership-content">
-
-    <div class="membership-option">
-
-      <h2 class="membership-title">
+<section class="editorial-section split-section membership-section" id="memberships" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; min-height: 335px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border-bottom: 1px solid rgba(25, 24, 22, 0.48);">
+<div class="membership-image" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; min-width: 0; padding: 26px; background: #f6f2e9; border-right: 1px solid rgba(25, 24, 22, 0.48);">
+<img alt="Indian Valley Chamber of Commerce membership" src="membership.webp" style="box-sizing: border-box; max-width: 100%; display: block; width: 100%; height: 100%; max-height: 430px; object-fit: contain; object-position: center;"/>
+</div>
+<div class="membership-content" style="box-sizing: border-box; display: grid; grid-template-rows: repeat(2, 1fr);">
+<div class="membership-option" style="box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 0; padding: 38px 42px; text-align: left;">
+<h2 class="membership-title" style='box-sizing: border-box; max-width: 460px; color: #191816; letter-spacing: -0.055em; margin: 8px 0 12px; font-family: "Playfair Display",serif; font-size: 28px; font-weight: 600; line-height: 1.15;'>
         Need to Renew Your Membership?
       </h2>
-
-      <a
-        class="outline-button"
-        href="https://www.zeffy.com/en-US/ticketing/indian-valley-chamber-of-commerce-membership-renewal"
-        target="_blank"
-        rel="noopener"
-      >
+<a class="outline-button" href="https://www.zeffy.com/en-US/ticketing/indian-valley-chamber-of-commerce-membership-renewal" rel="noopener" style='box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; padding: 13px 22px; color: #191816; background: transparent; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 9px; font-weight: 500; line-height: 1.2; letter-spacing: 0.16em; text-align: center; text-decoration: none; text-transform: uppercase; border: 1px solid #191816; border-radius: 0; transition: color 180ms ease,
+    background-color 180ms ease; min-width: 210px; margin-top: 24px;' target="_blank">
         Renew Membership
       </a>
-
-    </div>
-
-    <div class="membership-option">
-
-      <h2 class="membership-title">
+</div>
+<div class="membership-option" style="box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 0; padding: 38px 42px; text-align: left;">
+<h2 class="membership-title" style='box-sizing: border-box; max-width: 460px; color: #191816; letter-spacing: -0.055em; margin: 8px 0 12px; font-family: "Playfair Display",serif; font-size: 28px; font-weight: 600; line-height: 1.15;'>
         Ready to Join the Chamber?
       </h2>
-
-      <a
-        class="outline-button"
-        href="https://www.zeffy.com/en-US/ticketing/indian-valley-chamber-of-commerces-memberships"
-        target="_blank"
-        rel="noopener"
-      >
+<a class="outline-button" href="https://www.zeffy.com/en-US/ticketing/indian-valley-chamber-of-commerces-memberships" rel="noopener" style='box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; padding: 13px 22px; color: #191816; background: transparent; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 9px; font-weight: 500; line-height: 1.2; letter-spacing: 0.16em; text-align: center; text-decoration: none; text-transform: uppercase; border: 1px solid #191816; border-radius: 0; transition: color 180ms ease,
+    background-color 180ms ease; min-width: 210px; margin-top: 24px;' target="_blank">
         Become a Member
       </a>
-
-    </div>
-
-  </div>
-
+</div>
+</div>
 </section>
 
-</section>
-    <!-- =====================================================
+<!-- =====================================================
          MEETING DETAILS
          The featured meeting card lands here
     ====================================================== -->
-
-    <section
-      class="meeting-details"
-      id="board-meeting-details"
-      aria-labelledby="meeting-details-heading"
-    >
-
-      <p class="section-kicker">
+<section aria-labelledby="meeting-details-heading" class="meeting-details" id="board-meeting-details" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; display: none; scroll-margin-top: 24px;">
+<p class="section-kicker" style='box-sizing: border-box; margin: 0 0 14px; font-family: "IBM Plex Mono",
+    "Courier New",
+    monospace; font-size: 8px; font-weight: 500; line-height: 1.3; letter-spacing: 0.2em; text-transform: uppercase;'>
         Chamber Notice
       </p>
-
-      <h2 class="section-title" id="meeting-details-heading">
+<h2 class="section-title" id="meeting-details-heading" style='box-sizing: border-box; margin: 0 0 18px; font-family: "Playfair Display",
+    Georgia,
+    "Times New Roman",
+    serif; font-size: clamp(27px, 5vw, 38px); font-weight: 400; line-height: 1.03; letter-spacing: -0.045em; text-transform: none;'>
         Board of Directors Meeting
       </h2>
-
-      <p class="meeting-details-primary">
+<p class="meeting-details-primary" style="box-sizing: border-box; margin-bottom: 8px; font-weight: 500;">
         Monday, August 3, 2026 · 6:00PM
       </p>
-
-      <p>
-        The Crescent Store<br>
+<p style="box-sizing: border-box;">
+        The Crescent Store<br style="box-sizing: border-box;"/>
         Crescent Mills, California
       </p>
-
-      <p class="livestream-note">
+<p class="livestream-note" style="box-sizing: border-box; max-width: 540px; margin-top: 24px;">
         The meeting will be livestreamed. The livestream link and
         viewing instructions will be added here.
       </p>
-
-      <!-- Replace # with the livestream URL later -->
-      <a
-        class="text-link disabled-link"
-        href="#"
-        aria-disabled="true"
-      >
+<!-- Replace # with the livestream URL later -->
+<a aria-disabled="true" class="text-link disabled-link" href="#" style="box-sizing: border-box; color: inherit; display: inline-block; margin-top: 10px; font-size: 9px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-underline-offset: 4px; cursor: default; opacity: 0.5;">
         Livestream link coming soon
       </a>
-
-    </section>
-
-
-    <!-- =====================================================
+</section>
+<!-- =====================================================
          FOOTER
     ====================================================== -->
-
-    <footer class="newsletter-footer">
-
-      <div class="footer-logo-area">
-
-<img
-    src="logo.png"
-    alt="Indian Valley Chamber of Commerce"
-    class="footer-logo"
->
-
-        <p>
-          Indian Valley<br>
+<footer class="newsletter-footer" style="box-sizing: border-box; background: #f6f2e9; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; min-height: 145px;">
+<div class="footer-logo-area" style="box-sizing: border-box; background: #f6f2e9; display: flex; flex-direction: column; justify-content: center; padding: 27px 30px; align-items: flex-start; border-right: 1px solid rgba(25, 24, 22, 0.48);">
+<img alt="Indian Valley Chamber of Commerce" class="footer-logo" src="logo.png" style="box-sizing: border-box; max-width: 100%; width: 100px; height: auto; display: block; margin: 0 0 10px -8px;"/>
+<p style="box-sizing: border-box; margin: 12px 0 0; font-size: 8px; line-height: 1.6; letter-spacing: 0.08em; text-transform: uppercase;">
+          Indian Valley<br style="box-sizing: border-box;"/>
           Chamber of Commerce
         </p>
-
-      </div>
-<a
-  class="footer-meeting-link"
-  href="https://www.facebook.com/events/1827497748691515/?post_id=1841095300665093&acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22mechanism%22%3A%22footer_attachment%22%2C%22surface%22%3A%22newsfeed%22%7D]%2C%22ref_notif_type%22%3Anull%7D"
-  target="_blank"
-  rel="noopener"
->
-
-  <div class="footer-meeting-reminder">
-
-    <p class="footer-label">
+</div>
+<a class="footer-meeting-link" href="https://www.facebook.com/events/1827497748691515/?post_id=1841095300665093&amp;acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22search%22%7D%2C%7B%22mechanism%22%3A%22footer_attachment%22%2C%22surface%22%3A%22newsfeed%22%7D]%2C%22ref_notif_type%22%3Anull%7D" rel="noopener" style="box-sizing: border-box; display: block; color: inherit; text-decoration: none; transition: background-color 180ms ease,
+        color 180ms ease;" target="_blank">
+<div class="footer-meeting-reminder" style="box-sizing: border-box; background: #f6f2e9; display: flex; flex-direction: column; justify-content: center; padding: 27px 30px; align-items: flex-end; text-align: right;">
+<p class="footer-label" style="box-sizing: border-box; margin: 0; margin-bottom: 7px !important; font-size: 8px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;">
       Next Board Meeting
     </p>
-
-    <p>
-      Monday 08 03 2026<br>
-      6:00PM<br>
+<p style="box-sizing: border-box; margin: 0;">
+      Monday 08 03 2026<br style="box-sizing: border-box;"/>
+      6:00PM<br style="box-sizing: border-box;"/>
       The Crescent Store
     </p>
-
-  </div>
-
+</div>
 </a>
-
-    </footer>
-
-  </main>
-
+</footer>
+</main>
 </body>
 </html>

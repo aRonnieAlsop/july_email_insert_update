@@ -734,6 +734,54 @@ a {
 
     filter: none;
 }
+
+/* =========================================================
+   WOMEN'S EXPO IMAGE
+========================================================= */
+
+.expo-section .section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 12px;
+    background: var(--paper);
+}
+
+.expo-section .section-image img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    filter: none;
+}
+
+/* =========================================================
+   FIRST SATURDAY MARKET IMAGE
+========================================================= */
+
+.market-section .section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 12px;
+    background: var(--paper);
+}
+
+.market-section .section-image img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    filter: none;
+}
 /* =========================================================
    WEBSITE QUESTIONNAIRE
 ========================================================= */

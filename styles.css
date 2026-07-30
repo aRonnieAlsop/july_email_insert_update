@@ -710,6 +710,30 @@ a {
 
     filter: none;
 }
+
+/* =========================================================
+   COYOTE KARMA IMAGE
+========================================================= */
+
+.coyote-section .section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 12px;
+    background: var(--paper);
+}
+
+.coyote-section .section-image img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    filter: none;
+}
 /* =========================================================
    WEBSITE QUESTIONNAIRE
 ========================================================= */

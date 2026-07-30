@@ -1496,3 +1496,20 @@ a {
   }
 
 }
+
+.footer-meeting-link{
+    display:block;
+
+    color:inherit;
+    text-decoration:none;
+
+    transition:
+        background-color 180ms ease,
+        color 180ms ease;
+}
+
+.footer-meeting-link:hover,
+.footer-meeting-link:focus-visible{
+    background:var(--soft-hover);
+    outline:none;
+}

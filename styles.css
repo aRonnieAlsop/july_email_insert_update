@@ -631,7 +631,7 @@ a {
   object-fit: cover;
   object-position: center;
 
-  filter: grayscale(100%);
+  filter: none;
 }
 
 .section-image.image-muted img {
@@ -687,7 +687,29 @@ a {
     padding: 0;
 }
 
+/* =========================================================
+   GOLD DIGGERS IMAGE — SHOW FULL COLLAGE
+========================================================= */
 
+.gold-diggers-section .section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 0;
+    background: var(--paper);
+}
+
+.gold-diggers-section .section-image img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    filter: none;
+}
 /* =========================================================
    WEBSITE QUESTIONNAIRE
 ========================================================= */

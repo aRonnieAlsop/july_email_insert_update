@@ -883,6 +883,22 @@ a {
   scroll-margin-top: 24px;
 }
 
+/* =========================================================
+   MICKEY ADJUSTMENT
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .mickey-bottom {
+        margin: -70px 4px -1px 0;
+    }
+
+    .mickey-bottom img {
+        width: 130px;
+        transform: translateX(8px);
+    }
+
+}
 
 /* =========================================================
    TABLET AND MOBILE

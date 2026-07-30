@@ -932,8 +932,8 @@ a {
   align-items: center;
   justify-content: center;
 
-  width: 58px;
-  height: 58px;
+  width: 16px;
+  height: auto;
 
   font-family: var(--serif);
   font-size: 14px;
@@ -986,6 +986,14 @@ a {
 .inline-link:hover {
     color: #000;
     border-bottom-color: #000;
+}
+
+.footer-logo{
+    width: 100px;
+    height:auto;
+    display:block;
+
+    margin:0 0 10px -8px;
 }
 
 /* =========================================================

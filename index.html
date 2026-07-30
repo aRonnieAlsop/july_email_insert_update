@@ -720,7 +720,188 @@ a[x-apple-data-detectors], .x-gmail-data-detectors, .x-gmail-data-detectors * { 
   }
 }
 
-</style></head>
+</style>
+<style type="text/css">
+/* =========================================================
+   FINAL PHONE OVERRIDE
+   Keeps the working inline desktop layout, but stacks
+   all image/text feature sections on phone-sized screens.
+========================================================= */
+@media only screen and (max-width: 620px) {
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .newsletter-shell {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    overflow: hidden !important;
+    background: #f6f2e9 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .newsletter-shell::before {
+    left: 10px !important;
+  }
+
+  .newsletter-shell::after {
+    right: 10px !important;
+  }
+
+  .split-section,
+  .reverse-section {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+
+  .split-section .section-image,
+  .reverse-section .section-image,
+  .split-section .image-placeholder,
+  .reverse-section .image-placeholder {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid rgba(25, 24, 22, 0.48) !important;
+  }
+
+  .split-section .section-image img,
+  .reverse-section .section-image img,
+  .split-section .image-placeholder img,
+  .reverse-section .image-placeholder img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+  .split-section .editorial-copy,
+  .reverse-section .editorial-copy {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 30px 24px 34px !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+  }
+
+  .section-title {
+    font-size: 29px !important;
+    line-height: 1.04 !important;
+  }
+
+  .section-kicker,
+  .event-date {
+    font-size: 8px !important;
+  }
+
+  .gold-diggers-section .section-image,
+  .market-section .section-image,
+  .expo-section .section-image,
+  .coyote-section .section-image {
+    padding: 18px 14px !important;
+  }
+
+  .gold-diggers-section .section-image img,
+  .market-section .section-image img,
+  .expo-section .section-image img,
+  .coyote-section .section-image img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+  }
+
+  .membership-section {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .membership-image {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 24px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25, 24, 22, 0.48) !important;
+  }
+
+  .membership-image img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 430px !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+  }
+
+  .membership-content {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .membership-option {
+    display: block !important;
+    width: 100% !important;
+    padding: 36px 24px 40px !important;
+    text-align: center !important;
+  }
+
+  .membership-title {
+    width: 100% !important;
+    max-width: 460px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 36px !important;
+    line-height: 1 !important;
+  }
+
+  .membership-option .outline-button,
+  .questionnaire-section .outline-button {
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: 0 !important;
+  }
+
+  .newsletter-footer {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .footer-logo-area {
+    width: 100% !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(25, 24, 22, 0.48) !important;
+  }
+
+  .footer-meeting-link,
+  .footer-meeting-reminder {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .footer-meeting-reminder {
+    text-align: left !important;
+  }
+}
+</style>
+
+</head>
 <body bgcolor="#dedbd4" style='box-sizing: border-box; margin: 0; padding: 28px 16px; color: #191816; background: transparent; font-family: "IBM Plex Mono",
     "Courier New",
     monospace; font-size: 13px; font-weight: 400; line-height: 1.65;'>
